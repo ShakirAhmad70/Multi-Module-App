@@ -33,6 +33,8 @@ class EcommerceActivity : AppCompatActivity() {
                 "com.zbe.zbeapp.MainActivity" // full path to MainActivity
             )
 
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+
             startActivity(intent)
         }
 

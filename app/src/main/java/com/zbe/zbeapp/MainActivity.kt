@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         tvMain.setOnClickListener {
             val intent = Intent(this@MainActivity, EcommerceActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
     }
